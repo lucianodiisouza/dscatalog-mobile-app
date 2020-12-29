@@ -2,10 +2,10 @@ import axios from "axios";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export const api = axios.create({
-  baseURL: "https://nelio-dscatalog.herokuapp.com/",
+  baseURL: "http://localhost",
 });
 
-export const TOKEN = "Basic ZHNjYXRhbG9nOmRzY2F0YWxvZzEyMw==";
+export const TOKEN = "Basic ABCDEFHIJKLMNOPQRSTUWXYZ1234567890";
 
 export async function userToken() {
   const token = await AsyncStorage.getItem("@token");
